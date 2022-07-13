@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/pedimon-ico.png" type="image/x-icon"/>
+    <title>Terapias Holisticas</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav id="navbar">
+        <ul class="menu">
+          <li>
+            <a href="#" class="logo-link">
+              <img src="./img/logo.png" alt="Pedimon logo" class="logo"/>
+            </a>
+          </li>
+              <div class="container-items">
+                  <li class="item item-link"><a href="#products">Terapias</a></li>
+                  <li class="item item-link"><a href="#description">Info</a></li>
+                  <li class="item item-link"><a href="#contacto">Contacto</a></li>
+                  <li class="item">
+                    <a href="#cartSection"><i class="fa-solid fa-cart-shopping cart"></i>
+                      <span id="totalItems"></span>
+                    </a>
+                  </li>
+            </div>
+          <div class="btn__container">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--* Section 1 About -->
+      <section class="about__section" id="about">
+        <div class="about__content">
+            <img
+              src="./img/hero.png"
+              alt="FlorCabrera"
+              class="title-img"
+            />
+          <p>Nos preocupamos por vos y tu sentir.Somos un equipo de personas orientadas a generar un cambio en nuestros pacientes, a acompañarlos en un nuevo camino de exploración personal, intentando que cada uno reconozca sus problemas, los enfrente y los supere para obtener un equilibrio en su vida.</p>
+          <a href="#products" class="btn">TERAPIAS</a>
+        </div>
+        <div class="about__content--img">
+          <img src="img/hero.jpg" alt="hero" />
+        </div>
+      </section>
+      <!-- end seccion 1 -->
+      <!-- begin seccion 2 Description -->
+      <section class="description__section" id="description">
+            <h2>Animate a descubrir un nuevo YO!</h2>
+            <h3>Somos especialistas en distintos tratamientos y herramientas Holisticas...</h3>
+        <div class="card__container">
+          <!--* Card 1 -->
+          <div class="card">
+                <img
+                  src="./img/1.png"
+                  alt="info 1"
+                  class="info-card"
+                />
+            <p>Elegis la terapia sobre la que queres tratarte de la lista de terapias</p>
+          </div>
+          <!--* Card 2 -->
+          <div class="card">
+                <img
+                  src="./img/2.png"
+                  alt="info 1"
+                  class="info-card"
+                />
+            <p>La seleccionas y agregas al carrito para proceder a la reserva del turno</p>
+          </div>
+          <!--* Card 3 -->
+          <div class="card">
+                <img
+                  src="./img/3.png"
+                  alt="info 1"
+                  class="info-card"
+                />
+            <p>Le das al boton de comprar y listo! Ya tenemos en nuestras manos hacerte sentir mejor!</p>
+          </div>
+        </div>
+      </section>
+                               <!-- Terminada section_description -->
+                                <!--* List Products -->
+      <section class="listproducts__section" id="products">
+            <h2>TERAPIAS Y HERRAMIENTAS</h2>
+                                 <!-- Container para terapias -->
+              <div class="products__container">
+                                  <!-- Terapias-->
+                                          <!-- 1 -->
+                  <div class="product">
+                      <img
+                          src="./img/reiki.png"
+                          alt="reiki"
+                          class="terapias"
+                        />
+                    <p class="product__title">REIKI</p>
+                    <span class="product__price">$5700</span>
+                    <button
+                        class="product__btn"
+                        data-img="./img/reiki.png"
+                        data-name="reiki"
+                        data-price="573"
+                        data-count="1"
+                        id="btnComprar">Comprar
+                    </button>
+                  </div>
+                                        <!-- 2 -->
+                  <div class="product">
+                      <img
+                          src="./img/acces.png"
+                          alt="acces"
+                          class="terapias"
+                        />
+                      <p class="product__title">Acces</p>
+                      <span class="product__price">$5000</span>
+                      <button
+                          class="disabled"
+                          data-img="./img/acces.png"
+                          data-name="acces"
+                          data-price="321"
+                          data-count="1"
+                          id="btnComprar">Comprar
+                      </button>
+                    <div class="sinStock">Sin Stock. </div>
+                  </div>
+                                      <!-- 3 -->
+                  <div class="product">
+                      <img
+                          src="./img/cartanatal.png"
+                          alt="cartanatal"
+                          class="terapias"
+                        />
+                      <p class="product__title">C. Natal</p>
+                      <span class="product__price">$4000</span>
+                      <button
+                          class="product__btn"
+                          data-img="./img/cartanatal.png"
+                          data-name="cartanatal"
+                          data-price="192"
+                          data-count="1"
+                          id="btnComprar">Comprar
+                      </button>
+                  </div>
+                                      <!-- 4 -->
+                  <div class="product">
+                      <img
+                          src="./img/decodificacion.png"
+                          alt="decodificacion"
+                          class="terapias"
+                        />
+                      <p class="product__title">BioDeco</p>
+                      <span class="product__price">$5000</span>
+                      <button
+                          class="product__btn"
+                          data-img="./img/decodificacion.png"
+                          data-name="decodificacion"
+                          data-price="579"
+                          data-count="1"
+                          id="btnComprar">Comprar
+                      </button>
+                  </div>
+                                    <!-- 5 -->
+                  <div class="product">
+                      <img
+                          src="./img/barras.png"
+                          alt="barras"
+                          class="terapias"
+                        />
+                      <p class="product__title">Barras</p>
+                      <span class="product__price">$3000</span>
+                      <button
+                          class="product__btn"
+                          data-img="./img/barras.png"
+                          data-name="barras"
+                          data-price="225"
+                          data-count="1"
+                          id="btnComprar">Comprar
+                      </button>
+                  </div>
+                                  <!-- 6 -->
+                  <div class="product">
+                      <img
+                          src="./img/sanergia.png"
+                          alt="sanergia"
+                          class="terapias"
+                        />
+                      <p class="product__title">Sanergia</p>
+                      <span class="product__price">$4000</span>
+                      <button
+                          class="product__btn"
+                          id="btnComprar"
+                          data-img="./img/sanergia.png"
+                          data-name="sanergia"
+                          data-price="912"
+                          data-count="1">Comprar
+                      </button>
+                  </div>
+              </div>
+      </section>
+      <!-- Section Terminada -->
+      <!-- Section Carrito -->
+      <section class="cart__section" id="cartSection">
+          <h2>Carrito</h2>
+              <p>Otra que podemos hacer es que se mande al carrito en el navbar y se abra, pero bueno, despues con Js</p>
+        <div class="cart__container" id="cart">
+         <div class="productVacio">No hay productos seleccionados</div>
+          <!-- item 1 -->
+            <div class="cart__item">
+              <div class="cart__item--content">
+                  <img
+                      src="./img/acces.png"
+                      alt="acces"
+                      class="item-img"
+                    />
+                  <p class="cart__title">Descripcion</p>
+                  <span class="cart__price">$0</span>
+              </div>
+            </div>
+         </div>
+        </div>
+        <!-- total -->
+        <div class="total__items">
+          <div class="total__price">
+            <p class="total">Total:</p>
+            $
+            <span id="totalProducts"></span>
+          </div>
+          <button class="cart__btn">Finalizar Compra</button>
+        </div>
+      </section>
+    </main>
+    <footer id="contacto">
+      <div class="title">
+        <img src="./img/hero.png" alt="" class="title" />
+      </div>
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <a href="https://www.instagram.com/liberdademflor/"><img src="./img/insta.png" alt="" class="contacto" /></a>
+        <a href="https://www.twitter.com/liberdademflor/"><img src="./img/twitter.png" alt="" class="contacto" /></a>
+        <a href="https://www.facebook.com/liberdademflor/"><img src="./img/face.png" alt="" class="contacto" /></a>
+        <a href="https://www.linkedin.com/liberdademflor/"><img src="./img/link.png" alt="" class="contacto" /></a>
+        <a href="https://wa.me/5491169138006"><img src="./img/wtsp.png" alt="" class="contacto" /></a>
+        <p>Santa Teresita - Costa atlantica</p>
+      </div>
+      <div class="legales">
+        <h2>Legales</h2>
+        <p>@copyright todos los derechos reservados JMO's Software</p>
+      </div>
+      <p>Hecho en Nucba academy</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

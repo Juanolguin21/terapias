@@ -48,11 +48,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:center ;
-    background: var(--blue);
+    background:var(--blue);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    
 }
 
 nav {
-    width: 90%;
+    width: 95%;
     
 }
 
@@ -77,6 +81,9 @@ main {
     
 }
 
+.menu li a img {
+    flex-wrap: wrap;
+}
 .menu li a {
     color: var(--white);
     display: flex;
@@ -89,9 +96,29 @@ main {
     order: 1;
     width: 100%;
     color: var(--white);
+    display: none;
+   
+}
+.container-items a:hover {
+    color: black;
+    transform: scale(1.50);
+    transition: all 0.3s ease;
+}
+
+#check{
+   display: none;
+}
+   
+.checkbutton{
+    display: block;
+}
+
+#check:checked ~ .container-items{
+    left: 0;
+    width: 77vh;
+    display: flex;
 
 }
-    
 
 .item {
     width: 100%;
@@ -113,7 +140,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 10rem;
 }
 
 .about__content {
@@ -239,7 +266,7 @@ main {
     width: 350px;
     height: 520px;
     border-radius: 3rem;
-    position: relative;
+    position:static;
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
     -ms-border-radius: 3rem;
@@ -252,7 +279,7 @@ main {
 
 .product__title {
     font-size: 2rem;
-    text-transform: uppercase;
+    text-transform:uppercase;
     margin-top: 1.9rem;
     max-width: 200px;
 }
@@ -299,7 +326,6 @@ main {
     text-transform: uppercase;
     padding: 0.8rem 1rem;
     font-size: 1.5rem;
-    position: absolute;
     top: 1rem;
 }
 
@@ -432,6 +458,11 @@ footer .title {
 /* Media queries */
 @media (min-width: 1024px) { /*PANTALLAS MAYORES A 1024*/
 
+    header {
+    position: fixed;
+    width: 100%;
+    }
+
     #navbar {
         width: 100%;
         position: fixed;
@@ -444,7 +475,8 @@ footer .title {
         -ms-transition: top 0.5s;
         -o-transition: top 0.5s;
     }
-
+  
+    
     /*menu*/
     .menu {
         flex-wrap: nowrap;
@@ -576,11 +608,40 @@ footer .title {
 
 .btn:hover {
     background-color: var(--blue);
-    transform: scale(1.01);
+    transform: scale(1.10);
     transition: all 0.3s ease;
+    cursor: pointer;
+    
 }
 
 
 .btn:active {
     transform: scale(0.99);
+}
+.product__btn:hover {
+    background-color: var(--blue);
+    transform: scale(1.10);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.product__btn:active {
+    transform: scale(0.99);
+}
+
+.cart__btn:hover {
+    background-color: var(--blue);
+    transform: scale(1.10);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.cart__btn:active {
+    transform: scale(0.99);
+}
+.contacto a img:hover {
+    transform: scale(1.10);
+    transition: all 0.3s ease;
 }

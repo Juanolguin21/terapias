@@ -600,7 +600,7 @@ footer .title {
 
 }
 
-;
+
 
 .menu li a {
     position: relative;
@@ -620,7 +620,7 @@ footer .title {
 }
 .product__btn:hover {
     background-color: var(--blue);
-    transform: scale(1.10);
+    transform: scale(1.01);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -632,7 +632,7 @@ footer .title {
 
 .cart__btn:hover {
     background-color: var(--blue);
-    transform: scale(1.10);
+    transform: scale(1.01);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -642,6 +642,6 @@ footer .title {
     transform: scale(0.99);
 }
 .contacto a img:hover {
-    transform: scale(1.10);
+    transform: scale(1.01);
     transition: all 0.3s ease;
 }

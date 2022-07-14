@@ -12,6 +12,8 @@
     --small: 300;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -99,26 +101,14 @@ main {
     display: none;
    
 }
+
+
 .container-items a:hover {
     color: black;
     transform: scale(1.50);
     transition: all 0.3s ease;
 }
 
-#check{
-   display: none;
-}
-   
-.checkbutton{
-    display: block;
-}
-
-#check:checked ~ .container-items{
-    left: 0;
-    width: 77vh;
-    display: flex;
-
-}
 
 .item {
     width: 100%;
@@ -130,7 +120,12 @@ main {
 .menu .logo {
     width: 8rem;
 }
-
+.btn__container a {
+    padding-left: 30px;
+    color: var(--white);
+  
+   
+}
 /* section about */
 
 .about__section {
@@ -141,6 +136,7 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
+    flex-direction:row ;
 }
 
 .about__content {
@@ -185,6 +181,9 @@ main {
     width: 23rem;
     margin: 6rem auto;
     
+}
+.about__content--img h2{
+    color: var(--white);
 }
 
 /* section description */
@@ -524,6 +523,7 @@ footer .title {
         justify-content: center;
         padding: 10rem 0 5rem 0;
         gap: 50px;
+        flex-direction:row ;
     }
 
     .about__content p {
@@ -531,6 +531,16 @@ footer .title {
         padding: 0.1rem 15rem;
         text-align: center;
         justify-content: space-between;
+    }
+
+    .about__content--img h2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        color: var(--blue);
+        padding: 20px;
     }
 
     .about__content img {
@@ -543,7 +553,25 @@ footer .title {
     .about__content--img {
         margin: 0;
         padding: 2rem;
-        display:none;
+    }
+  
+    .about__content--img:active{
+        cursor: pointer;
+        transform: scale(1.80);
+        transition: all 0.10s ease;
+        
+        
+
+    }
+    .about__content--img h2:hover{
+        cursor: pointer;
+        border-style:ridge;
+    }
+
+
+    .about__content--img h2:active {
+        display: none;
+
     }
     .about__content .btn {
         padding: 1.5rem;
@@ -600,8 +628,6 @@ footer .title {
 
 }
 
-
-
 .menu li a {
     position: relative;
 }
@@ -614,7 +640,6 @@ footer .title {
     
 }
 
-
 .btn:active {
     transform: scale(0.99);
 }
@@ -624,7 +649,6 @@ footer .title {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 
 .product__btn:active {
     transform: scale(0.99);
@@ -637,11 +661,11 @@ footer .title {
     cursor: pointer;
 }
 
-
 .cart__btn:active {
     transform: scale(0.99);
 }
+
 .contacto a img:hover {
-    transform: scale(1.01);
+    transform: scale(1.10);
     transition: all 0.3s ease;
 }

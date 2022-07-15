@@ -423,8 +423,11 @@ footer {
     align-items: center;
     background-color: var(--blue);
     padding: 8rem 0;
+    padding-left: 0;
     color: white;
     text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 footer .title {
@@ -454,6 +457,7 @@ footer .title {
     flex-wrap: wrap;
 
 }
+
 
 .contacto a {
    display: flex;
@@ -566,6 +570,7 @@ footer .title {
     .about__content--img {
         margin: 0;
         padding: 2rem;
+        
     }
   
     .about__content--img:active{
@@ -645,7 +650,12 @@ footer .title {
     .contacto {
         flex-direction: row;
     }
-
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    
+    }
 }
 
 .menu li a {
@@ -686,7 +696,8 @@ footer .title {
     transform: scale(0.99);
 }
 
-.contacto a img:hover {
+a img:hover {
     transform: scale(1.10);
     transition: all 0.3s ease;
+    border-color: var(--blue);
 }

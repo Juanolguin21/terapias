@@ -123,9 +123,9 @@ main {
 .btn__container a {
     padding-left: 30px;
     color: var(--white);
-  
-   
+
 }
+
 /* section about */
 
 .about__section {
@@ -256,11 +256,12 @@ main {
 }
 
 .product {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fondo.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
     margin-top: 7rem;
     width: 350px;
     height: 520px;
@@ -274,13 +275,22 @@ main {
 
 .product img {
     width: 200px;
+    border-radius: 3rem;
 }
 
 .product__title {
+    
     font-size: 2rem;
+    text-align: center;
     text-transform:uppercase;
+    font-weight: var(--medium);
+    color: var(--blue);
     margin-top: 1.9rem;
     max-width: 200px;
+    
+   
+   
+
 }
 
 .product__price {
@@ -347,8 +357,11 @@ main {
     color: var(--blue);
 }
 
-.item-img {
-    width: 50px;
+.cart__section a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .cart__container {
@@ -620,6 +633,13 @@ footer .title {
     .card__container {
         max-width: 1000px;
     }
+    .cart__section a i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
 
     /* termina seccion 4*/
     .contacto {
@@ -653,6 +673,7 @@ footer .title {
 .product__btn:active {
     transform: scale(0.99);
 }
+
 
 .cart__btn:hover {
     background-color: var(--blue);

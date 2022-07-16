@@ -328,7 +328,7 @@ main {
 }
 
 .sinStock {
-    background: #f01919;
+    background:brown;
     color: white;
     text-transform: uppercase;
     padding: 0.8rem 1rem;
@@ -667,6 +667,10 @@ footer {
     /* termina seccion 4*/
     .contacto {
         flex-direction: row;
+    }
+    .contacto:hover {
+        transform: scale(1.50);
+        transition: all 0.3s ease;
     }
    
     footer {

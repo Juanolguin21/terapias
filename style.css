@@ -362,9 +362,9 @@ main {
 
 .contacto-title {
     background:var(--blue);
-    padding: 4rem 0;
+    padding: 1rem 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 0%;
@@ -457,10 +457,19 @@ footer {
     color: var(--white);
     padding-left: 30px;
 }
+.linea {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 5px auto 0 auto;
+  }
 
 .logofooter img {
     display: none;
 }
+
 .legales {
     text-shadow:4px 3px 7px #000;
     display: flex;

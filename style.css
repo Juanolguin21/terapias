@@ -386,7 +386,7 @@ main {
     font-size: 2rem;
         
 }
-/** Footer */
+/* Footer */
 footer {
     display: flex;
     background-color: var(--blue);

@@ -129,8 +129,6 @@ main {
 /* section about */
 
 .about__section {
-    background-color: var(--white);
-    background:no-repeat;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -482,7 +480,7 @@ footer {
     padding: 10px;
 }
 .legales img {
-    width: 13rem;
+    width: 8rem;
     
 }
 .yendo .mapa {
@@ -559,7 +557,7 @@ footer {
         justify-content: center;
         padding: 10rem 0 5rem 0;
         gap: 50px;
-        flex-direction:row ;
+        flex-direction:row ;       
     }
 
     .about__content p {

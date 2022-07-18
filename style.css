@@ -484,9 +484,22 @@ footer {
     width: 8rem;
     
 }
-.yendo .mapa {
+.mapa
+{
+    padding-top: 2rem;;
+}
+.mapa iframe{
     display: flex;
-    padding-top: 2rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    /*Safari y Chrome*/
+    -moz-border-radius: 0.6rem;
+    /*Firefox*/
+    -o-border-radius: 0.6rem;
+    /*Opera*/
+    -ms-border-radius: 0.6rem;
+    /*IE 8*/
+    box-shadow: 7px 13px 37px #000;
 }
 
 /* Media queries */

@@ -145,7 +145,7 @@ main {
 }
 
 .title-img {
-    width: 350px;
+    width: 400px;
 }
 
 .about__section p {
@@ -154,6 +154,7 @@ main {
     margin: 3rem 0 2rem 0;
     text-align: center;
     padding: 0 4rem;
+   
 }
 
 .about__content .btn {
@@ -551,20 +552,23 @@ footer {
     /* menu termina */
     /* seccion 1*/
     .about__section {
+        margin-top: 1rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        padding: 10rem 0 5rem 0;
-        gap: 50px;
+        padding: 2rem 0 2rem 0;
+        gap: 15px;
         flex-direction:row ;       
     }
-
+   
     .about__content p {
-        font-size: 2.3rem;
-        padding: 0.1rem 15rem;
+        font-size: 1.6rem;
+        padding: 0.2rem 6rem;
         text-align: center;
-        justify-content: space-between;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     .about__content--img h2{
@@ -574,20 +578,25 @@ footer {
         justify-content: space-between;
         text-align: center;
         color: var(--blue);
-        padding: 20px;
+        padding: 2rem;
         text-shadow:2px 1px 3px #000;
     }
 
-    .about__content img {
+    .about__content--img img{
         width: 100%;
         max-width: 500px;
         padding: 2rem 10 rem;
         justify-content: flex-start;
+        border-radius: 1rem;
+        box-shadow: 7px 13px 37px #000;
     }
 
     .about__content--img {
         margin: 0;
-        padding: 2rem;
+        padding: 8rem;
+        width: 110rem;
+        margin-top: 6rem;
+        
         
     }
   
@@ -595,6 +604,7 @@ footer {
         cursor: pointer;
         transform: scale(1.80);
         transition: all 0.10s ease;
+        position:static;
         
         
 
@@ -611,7 +621,7 @@ footer {
 
     }
     .about__content .btn {
-        padding: 1.5rem;
+        padding: 1.1rem;
         
     }
     
@@ -682,7 +692,7 @@ footer {
     .logofooter img{
         display:flex;
         flex-direction: row;
-        max-width: 492px;
+        max-width: 450px;
         border-radius: 1rem;
         box-shadow: 7px 13px 37px #000;
     }

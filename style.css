@@ -118,6 +118,12 @@ main {
 
 .menu .logo {
     width: 8rem;
+    
+}
+.logo:hover {
+    transform: scale(1.50);
+    transition: all 0.3s ease;
+    
 }
 .btn__container a {
     padding-left: 30px;
@@ -146,6 +152,7 @@ main {
 
 .title-img {
     width: 400px;
+    border-radius: 0.6rem;
 }
 
 .about__section p {
@@ -227,6 +234,11 @@ main {
     justify-content: center;
     margin: 4rem 0;
     padding: 20px;
+}
+.card:hover {
+    transform: scale(1.20);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .card p {
@@ -414,6 +426,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     box-shadow: 7px 13px 37px #000;
+    border-radius: 0.6rem;
 }
 .contacto {
     display: flex;

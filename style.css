@@ -517,6 +517,7 @@ main {
   .section-p-small {
     color: var(--white);
     padding: 15px;
+    font-size: 0.8rem;
   }
 
 /* contacto */
@@ -858,6 +859,12 @@ footer h1 {
     }
 
     /* termina seccion 3*/
+    /* SPEACKERS */
+    .section-p-small {
+        color: var(--white);
+        padding: 15px;
+        font-size: 1rem;
+      }
     /* seccion 4*/
     .card__container {
         max-width: 1000px;

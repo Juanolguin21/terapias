@@ -48,7 +48,7 @@ li {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center ;
     background:var(--blue);
     position: fixed;
@@ -285,7 +285,7 @@ main {
 
 .listproducts__section h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--blue);
     text-shadow:4px 3px 7px #000;
 }
@@ -570,7 +570,7 @@ footer {
 }
 
 .yendo .title {
-    width: 25rem;
+    width: 23rem;
     height: auto;
     border-radius: 10% 10%;
     display: flex;

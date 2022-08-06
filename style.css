@@ -52,6 +52,7 @@ header {
     align-items:center ;
     background:var(--blue);
     position: fixed;
+    z-index: 1;
     width: 100%;
     top: 0%;
     
@@ -124,7 +125,7 @@ main {
     
 }
 .logo:hover {
-    transform: scale(1.50);
+    transform: scale(1.05);
     transition: all 0.3s ease;
     
 }
@@ -142,7 +143,8 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem ;
     flex-direction:row ;
 }
 
@@ -154,16 +156,15 @@ main {
 }
 
 .title-img {
-    width: 400px;
+    width: 300px;
     border-radius: 0.6rem;
 }
 
 .about__section p {
     font-size: 1rem;
     font-weight: var(--small);
-    margin: 3rem 0 2rem 0;
     text-align: center;
-    padding: 0 4rem;
+    padding: 2rem 2rem;
    
 }
 
@@ -184,15 +185,38 @@ main {
     font-size: 1.5rem;
     font-weight: var(--medium);
     cursor: pointer;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about__content--img {
     width: 23rem;
-    margin: 6rem auto;
+    margin: 1rem auto;
+   
+}
+.about__content--img img{
+    border-radius: 100rem;
+    box-shadow: 7px 13px 37px #000;
     
 }
-.about__content--img h2{
-    color: var(--white);
+.about__content h1 {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blue);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px #000;
+}
+.about__content h2 {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px var(--blue);
 }
 
 /* section description */
@@ -204,7 +228,8 @@ main {
     align-items: center;
     color: var(--white);
     padding: 3rem 0;
-    background: var(--blue);
+    background: linear-gradient( var(--blue),rgba(252, 144, 144, 0.7));
+    
 }
 
 .description__section h2 {
@@ -229,7 +254,9 @@ main {
     margin-bottom: 1rem;
     border-radius: 50%;
 }
-
+.card__container {
+    width: 20rem;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -272,7 +299,7 @@ main {
 }
 
 .product {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fondo.jpg");
+    background-image: linear-gradient(rgba(252, 144, 144, 0.7), rgba(212, 143, 31, 0.7)), url("img/fondo.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +318,8 @@ main {
 
 .product img {
     width: 200px;
-    border-radius: 3rem;
+    border-radius: 50rem;
+    box-shadow: 7px 3px 7px #000;
 }
 
 .product__title {
@@ -306,7 +334,7 @@ main {
 }
 
 .product__price {
-    color: var(--blue);
+    color: black;
     font-weight: var(--medium);
     font-size: 2.8rem;
     margin: 2rem 0;
@@ -324,9 +352,10 @@ main {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+    box-shadow: 7px 3px 7px #000;
 }
 
-.disabled {
+/*.disabled {
     background: #f3f3f3;
     border: none;
     padding: 1rem 5rem;
@@ -348,7 +377,7 @@ main {
     padding: 0.8rem 1rem;
     font-size: 1.5rem;
     top: 1rem;
-}
+}*/
 
 .btn:hover {
     background-color: var(--blue);
@@ -371,17 +400,134 @@ main {
 .product__btn:active {
     transform: scale(0.99);
 }
+/* Doctores */
+
+.section-container {
+    background-image: linear-gradient(rgba(252, 144, 144, 0.7), var(--blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    background-color: var(--blue);
+    
+}
+#speakers {
+    flex-direction: column;
+    gap: max(120px, 30%);
+   
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    width: 100%;
+    padding-bottom: 150px;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-shadow: 7px 3px 7px #000;
+    font-size: 3rem;
+  }
+  
+  .speakers-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 90px;
+  }
+  
+  .speakers-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color:salmon;
+    text-align: center;
+    width: 250px;
+    height: 450px;
+    position: relative;
+    padding-top: 90px;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .speakers-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 70px;
+    font-weight: 300;
+    color: var(--yellow);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    background-size: cover;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .speakers-card:first-child .speakers-card-img {
+    background-image: url(./img/flor.jpg);
+  }
+  
+  .speakers-card:nth-child(2) .speakers-card-img {
+    background-image: url(./img/mar.jpg);
+  }
+  
+  .speakers-card:nth-child(3) .speakers-card-img {
+    background-image: url(./img/nancy.jpg);
+  }
+  
+  .speakers-card:nth-child(4) .speakers-card-img {
+    background-image: url(./img/agustin.jpg);
+  }
+  
+  .speakers-card:nth-child(5) .speakers-card-img {
+    background-image: url(./img/vanina.jpg);
+  }
+  .speakers-card:nth-child(6) .speakers-card-img {
+    background-image: url(./img/cintia.jpg);
+  }
+  
+  .speakers-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-shadow: 7px 3px 7px #000;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 5rem;
+  }
+  
+  .responsive-btn {
+    display: none;
+  }
+  .section-p-small {
+    color: var(--white);
+    padding: 15px;
+  }
 
 /* contacto */
 
 .contacto-title {
-    background:var(--blue);
-    padding: 1rem 0;
+    padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0%;
+    
 }
 .contacto-title a i {
     display: flex;
@@ -390,7 +536,7 @@ main {
     color: var(--white);
     font-size: 5rem;
     text-shadow: 7px 13px 37px #000;
-    padding-left: 1rem;
+    padding-bottom: 2rem;
     
 }
 .contacto-title h2 {
@@ -400,33 +546,40 @@ main {
     color: var(--white);
     text-shadow: 7px 3px 7px #000;
     font-size: 2rem;
+    padding-bottom: 2rem;
         
 }
 /* Footer */
 footer {
     display: flex;
     background-color: var(--blue);
-    padding: 6rem 0;
+    padding: 4rem 0;
     color: white;
     text-align: center;
     align-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 0;
+}
+.yendo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .yendo .title {
     width: 25rem;
     height: auto;
-    margin-bottom: 1rem;
     border-radius: 10% 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+
 }
 .title img {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 7px 13px 37px #000;
     border-radius: 0.6rem;
@@ -434,7 +587,7 @@ footer {
 .contacto {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -445,32 +598,31 @@ footer {
     max-height: 100px;
     border-radius: 40% 40%;
     box-shadow: 7px 13px 37px #000;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
 }
 
 .contacto a {
    display: flex;
    flex-direction: row;
    margin-top: 1rem 0;
-   padding: 10px;
+   padding: 0.5rem
 }
 .yendo h3 {
     display: flex;
     align-items: center;
     text-shadow:4px 3px 7px #000;
     justify-content: center;
-    padding: 20px;
-    padding-bottom:10px;
-    padding-left: 60px;
+    padding-top: 20px;
 }
-.yendo h1 {
+
+footer h1 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-shadow:4px 3px 7px #000;
     color: var(--white);
-    padding-left: 30px;
+    padding: 3rem 8rem;
 }
 .linea {
     display: flex;
@@ -499,13 +651,14 @@ footer {
 .legales img {
     width: 8rem;
     background-color: #f3f3f300;
-    
 }
 .mapa
 {
     padding-top: 2rem;;
 }
 .mapa iframe{
+    align-items: center;
+    justify-content: center;
     display: flex;
     border-radius: 0.6rem;
     -webkit-border-radius: 0.6rem;
@@ -545,7 +698,8 @@ footer {
     .menu {
         flex-wrap: nowrap;
         justify-content: space-around;
-        margin: 1rem auto;
+        margin: 0rem auto;
+        box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);;
         
     }
     .menu li a {
@@ -581,55 +735,46 @@ footer {
 
     /* menu termina */
     /* seccion 1*/
+    .about__content{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 3rem;
+        flex-direction: column;
+    }
     .about__section {
-        margin-top: 1rem;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        padding: 1.1rem 0 1.1rem 0;
-        gap: 15px;
-        flex-direction:row ; 
+        gap: 5px;
+        flex-direction:row-reverse; 
         background-image: url(img/fondo2.png);
         background-size: cover;      
+        padding-top: 10rem;
+        padding-bottom: 5rem;
     }
    
     .about__content p {
         font-size: 1.6rem;
-        padding: 0.2rem 6rem;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
-
-    .about__content--img h2{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        color: var(--blue);
         padding: 2rem;
-        text-shadow:2px 1px 3px #000;
+        text-align: center;
+        justify-content:center;
+        display: flex;
+        align-items: center;
     }
-
     .about__content--img img{
-        width: 100%;
-        max-width: 500px;
-        padding: 2rem 10 rem;
-        justify-content: flex-start;
-        border-radius: 1rem;
+        
+        width: 25rem;
+        border-radius: 100rem;
         box-shadow: 7px 13px 37px #000;
     }
 
     .about__content--img {
-        margin: 0;
-        padding: 8rem;
-        width: 110rem;
-        margin-top: 6rem;
-        
-        
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 5rem;
+    
     }
   
     .about__content--img:active{
@@ -637,6 +782,7 @@ footer {
         transform: scale(1.80);
         transition: all 0.10s ease;
         position:static;
+        z-index: 1;
         
         
 
@@ -657,7 +803,17 @@ footer {
         
     }
     
-
+    .about__content h1 {
+        padding-top: 0;
+        font-size: 5rem;
+        text-shadow: 5px 3px 5px #000;
+     
+    }
+    .about__content h2 {
+        font-size: 4rem;
+        text-shadow: 5px 3px 5px var(--blue);
+     
+    }
     /* termina seccion 1*/
     /* seccion 2*/
    
@@ -665,6 +821,7 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        width: 200rem;
     }
 
     .description__section h3 {
@@ -707,7 +864,6 @@ footer {
     }
     .contacto-title h2 {
         font-size: 3rem;
-
     }
     
     /* termina seccion 4*/
@@ -721,7 +877,6 @@ footer {
    
     footer {
         flex-direction: row;
-        align-items: center;
         width: 100%;
         justify-content: space-evenly;
         margin-top: 0%;
@@ -729,20 +884,12 @@ footer {
     }
     .logofooter img{
         display:flex;
-        flex-direction: row;
-        max-width: 450px;
+        width: 30rem;
         border-radius: 1rem;
         box-shadow: 7px 13px 37px #000;
     }
 
-    .yendo {
-        display: flex;
-        text-align: flex-start;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: column;
-      
-    }
-   
+    
+    
 
 }

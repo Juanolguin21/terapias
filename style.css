@@ -48,7 +48,7 @@ li {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center ;
     background:var(--blue);
     position: fixed;
@@ -618,12 +618,13 @@ footer {
 }
 
 footer h1 {
+    font-size: medium;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-shadow:4px 3px 7px #000;
     color: var(--white);
-    padding: 3rem 8rem;
 }
 .linea {
     display: flex;
@@ -887,7 +888,9 @@ footer h1 {
         width: 100%;
         justify-content: space-evenly;
         margin-top: 0%;
-
+    }
+    footer h1 {
+        display: none;
     }
     .logofooter img{
         display:flex;
